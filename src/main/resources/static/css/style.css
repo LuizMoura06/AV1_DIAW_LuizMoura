@@ -1,0 +1,208 @@
+:root {
+    color-scheme: light;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #333;
+    background: #f2f2f2;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+}
+
+.cabecalho {
+    padding: 16px 24px;
+    color: #fff;
+    background: #1d3f73;
+}
+
+.cabecalho h1 {
+    margin: 0;
+    font-size: 24px;
+    line-height: 1.35;
+}
+
+.conteudo {
+    width: min(1160px, calc(100% - 32px));
+    margin: 20px auto 32px;
+}
+
+.filtros {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 16px;
+    padding: 16px;
+    border-radius: 9px;
+    background: #fff;
+    box-shadow: 0 1px 3px #00000026;
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 180px;
+    min-width: 0;
+}
+
+.campo-cargo {
+    width: 192px;
+}
+
+label {
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+input,
+select,
+button,
+.limpar {
+    min-height: 36px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font: inherit;
+    font-size: 14px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 8px;
+    color: #222;
+    background: #fff;
+}
+
+.acoes {
+    display: flex;
+    gap: 8px;
+}
+
+button,
+.limpar {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 9px 18px;
+    line-height: 1.25;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button {
+    border-color: #1d3f73;
+    color: #fff;
+    background: #1d3f73;
+}
+
+button:hover {
+    background: #17335d;
+}
+
+.limpar {
+    color: #333;
+    background: #fff;
+}
+
+.limpar:hover {
+    background: #f2f2f2;
+}
+
+input:focus-visible,
+select:focus-visible,
+button:focus-visible,
+.limpar:focus-visible {
+    outline: 3px solid #527cac;
+    outline-offset: 3px;
+}
+
+.contagem {
+    margin: 16px 0;
+    font-size: 14px;
+    line-height: 1.4;
+}
+
+.sem-resultados {
+    padding: 24px 16px;
+    border-radius: 9px;
+    background: #fff;
+    line-height: 1.5;
+}
+
+.grade-candidatos {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 12px;
+}
+
+.card {
+    min-width: 0;
+    overflow: hidden;
+    border-radius: 9px;
+    background: #fff;
+    box-shadow: 0 1px 3px #00000026;
+}
+
+.foto-candidato {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 161 / 225;
+    object-fit: cover;
+    background: #e8e8e8;
+}
+
+.dados-candidato {
+    padding: 9px 10px 12px;
+    font-size: 12px;
+    line-height: 1.3;
+    overflow-wrap: break-word;
+}
+
+.dados-candidato h2 {
+    margin: 0 0 4px;
+    color: #1d3f73;
+    font-size: 14px;
+    line-height: 1.2;
+}
+
+.dados-candidato p {
+    margin: 0;
+}
+
+.destaque {
+    font-weight: 700;
+}
+
+.nome-civil {
+    font-style: italic;
+}
+
+@media (max-width: 600px) {
+    .cabecalho {
+        padding: 16px;
+    }
+
+    .cabecalho h1 {
+        font-size: 21px;
+    }
+
+    .campo,
+    .campo-cargo {
+        flex: 1 1 100%;
+        width: 100%;
+    }
+
+    .acoes {
+        width: 100%;
+    }
+
+    button,
+    .limpar {
+        flex: 1;
+    }
+}

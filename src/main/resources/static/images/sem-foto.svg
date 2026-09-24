@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="161" height="225" viewBox="0 0 161 225">
+  <rect width="161" height="225" fill="#e6e9ee"/>
+  <circle cx="80.5" cy="77" r="29" fill="#aab3c1"/>
+  <path d="M27 166c0-34 22-54 53.5-54S134 132 134 166" fill="#aab3c1"/>
+  <text x="80.5" y="199" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" fill="#475569">Sem foto</text>
+</svg>
